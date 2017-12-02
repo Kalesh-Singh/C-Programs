@@ -13,5 +13,6 @@ int main()
 	y = 6;
 	sum = x + y;
 	printf("Sum = %d\n", sum);
+	printf("%d + %d = %d\n", x, y, sum);
 	return 0;
 }
