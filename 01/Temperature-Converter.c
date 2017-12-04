@@ -9,7 +9,7 @@ int main()
     printf("Enter temperature in degree Fahrenheit:\t");
     scanf("%f", &fahrenheit);
 
-    celcius = (fahrenheit - 32) * 5 / 9;
+    celcius = (5 / 9) * (fahrenheit - 32);
 
     printf("The temperature in celcius is %0.2f\n\n", celcius);
 
