@@ -13,9 +13,7 @@ int main()
     printf("Enter 2nd Number:\t");
     scanf("%d", &y);
 
-    max = x > y ? x : y;
-
-    printf("%d is the larger\n\n", max);
+    printf("%d is the larger\n\n", x > y ? x : y);
 
     return 0;
 }    
