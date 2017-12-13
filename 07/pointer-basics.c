@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+change(int*, float*, char*);
+
 int main()
 {
     int x;
@@ -23,7 +25,7 @@ int main()
     printf("y = %f\n", y);
     printf("ch = %c\n", ch);
 
-    change(x, y, ch);
+    change(&x, &y, &ch);
 
     printf("x = %d\n", x);
     printf("y = %f\n", y);
@@ -32,11 +34,11 @@ int main()
     return 0;
 }
 
-change(int p, float q, char r)
+change(int* ptr1, float* ptr2, char* ptr3)
 {
-    p = 10;
-    q = 9.8;
-    r = '$';
+    *ptr1 = 10;
+    *ptr2 = 9.8;
+    *ptr3 = '$';
 }
 
 
