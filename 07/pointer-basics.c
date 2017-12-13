@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-change(int*, float*, char*);
+void change(int*, float*, char*);
 
 int main()
 {
@@ -34,7 +34,7 @@ int main()
     return 0;
 }
 
-change(int* ptr1, float* ptr2, char* ptr3)
+void change(int* ptr1, float* ptr2, char* ptr3)
 {
     *ptr1 = 10;
     *ptr2 = 9.8;
