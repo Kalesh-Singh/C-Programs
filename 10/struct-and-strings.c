@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef struct
 {
@@ -12,12 +13,12 @@ int main()
 {
     student s1, s2;
 
-    s2.name = "Johanan Dolphin";
+    strcpy(s2.name, "Johanan Dolphin");
     s2.rollno = 578;
     s2.marks = 43.21;
     s2.grade = 'F';
 
-    s3 = {"Andy Sattan", 789, 78.78, 'B'};
+    student s3 = {"Andy Sattan", 789, 78.78, 'B'};
 
     puts("Enter the name of the student:");
     gets(s1.name);
