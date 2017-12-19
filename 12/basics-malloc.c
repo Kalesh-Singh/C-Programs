@@ -37,5 +37,7 @@ int main()
 
     printf("]\n");
 
+    free(ptr);			// We must free the memory we allocated after we are done.
+
     return 0;
 }
