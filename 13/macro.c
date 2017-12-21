@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define PI 3.14				// Macro definition
+#define CIRCLEAREA(x) (PI * x * x)	// Nested Macro with parameter
 
 float circle_area(int);
 float circle_circum(int);
@@ -25,7 +26,7 @@ int main()
     printf("Enter height of the cylinder:\t");
     scanf("%d", &h);
     
-    ac = circle_area(r);
+    ac = CIRCLEAREA(r);
     cc = circle_circum(r);
     sas = shpere_surface_area(r);
     vs = sphere_volume(r);
